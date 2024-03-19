@@ -31,7 +31,7 @@ const Index = () => {
         </div>
         <div className="container-fluid">
           <div className="hero-bottom-image">
-            <img src="assets/images/banner/home-banner.png" alt="Hero" />
+            <img src="assets/images/banner/banner-home.jpg" alt="Hero" />
             <div className="hero-social">
               {/* <a href="#">
                 <i className="fab fa-facebook-f" /> <span>Facebook</span>
