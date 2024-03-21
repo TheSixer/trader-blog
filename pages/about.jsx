@@ -19,7 +19,7 @@ const About = () => {
           <div className="row">
             <div className="col-xl-10 col-lg-11">
               <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-                I'm A Quant Trader
+                We are Quant Traders
                 <img
                   className="mxw-20"
                   src="assets/images/banner/inside-title3.png"
@@ -30,7 +30,7 @@ const About = () => {
                   src="assets/images/banner/inside-title4.png"
                   alt="title"
                 />
-                And A Bot
+                And Bot
                 <span className="arrow">
                   <img
                     className="wow fadeInLeft delay-0-6s"
@@ -38,7 +38,7 @@ const About = () => {
                     alt="Arrow"
                   />
                 </span>
-                Developer
+                Developers
               </h1>
             </div>
           </div>
@@ -63,7 +63,8 @@ const About = () => {
           <div className="row">
             <div className="col-lg-6 wow fadeInLeft delay-0-2s">
               <div className="client-text text-lg-start text-center mt-40 pb-50">
-                作为一名资深程序员，本人接触量化近十年时间。我的编程技能与金融市场的深度理解相结合，使我能够设计和开发高效的交易算法和工具。我热衷于利用技术手段解决金融市场中的复杂问题，通过数据分析、机器学习和算法优化来实现交易策略的自动化与优化。我的经验使我对市场变化有着敏锐的洞察力，能够快速响应并调整策略，以取得最佳的交易结果。在不断学习与探索的过程中，我始终保持着对新技术和新方法的开放心态，以不断提升自己在量化交易领域的竞争力。
+                <p className="mb-2 indent-2">我们是一群热衷于金融市场的探索者和技术爱好者！我们深入研究数据、分析趋势，并通过量化交易策略将洞察力转化为实际行动。无论是基于技术分析、机器学习还是深度学习，我们致力于构建创新的交易模型，以实现长期稳健的收益。</p>
+                <p className="indent-2">我们熟练掌握编程技能，利用最新的技术和工具构建高效的交易系统。自动化交易、量化策略优化，我们将技术创新融入交易实践，不断挑战传统观念，开创新的交易前景。</p>
               </div>
             </div>
             <div className="col-lg-6 wow fadeInRight delay-0-2s">
@@ -84,10 +85,10 @@ const About = () => {
       <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
         <div className="container container-1290">
           <div className="row justify-content-center">
-            <div className="col-lg-7">
+            <div className="col-lg-8">
               <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">我的爱好</span>
-                <h2>本人是一名量化爱好者，接触量化近十年时间， </h2>
+                <span className="sub-title mb-15">社区分享，共同成长</span>
+                <h4>欢迎与全球交易者和程序开发者分享知识、经验和见解。 </h4>
               </div>
             </div>
           </div>
@@ -391,7 +392,7 @@ const About = () => {
       <section className="client-logo-area pt-130 rpt-100 pb-100 rpb-70">
         <div className="container">
           <div className="section-title text-center mb-60">
-            <h4>We Have 1520+Global Clients</h4>
+            <h4 className="leading-10">无论你是新手还是资深交易者，无论你是编程高手还是技术初学者，我们都欢迎你的加入！让我们一起探索金融科技的辉煌未来，实现个人和团队的潜力最大化！</h4>
           </div>
           <div className="client-logo-wrap">
             <Link legacyBehavior href="/contact">

@@ -242,7 +242,7 @@ const Projects = () => {
                 <Link legacyBehavior href="/about">
                   <a className="explore-more text-start mt-30">
                     <i className="fas fa-arrow-right" />{" "}
-                    <span>关于我</span>
+                    <span>关于我们</span>
                   </a>
                 </Link>
               </div>

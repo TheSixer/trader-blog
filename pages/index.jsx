@@ -70,17 +70,14 @@ const Index = () => {
             <div className="col-xl-7 col-lg-9">
               <div className="about-content wow fadeInUp delay-0-4s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-15">个人介绍</span>
+                  <span className="sub-title mb-15">关于量化</span>
                   <h2>
                     Our Main Goal to Satisficed Local &amp; Global Clients
                   </h2>
                 </div>
                 <div className="content">
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium totam aperiam
-                    eaque quae abillo inventore veritatisey et quasi architecto
-                    beatae vitae dictasunt explicabo voluptatem.
+                    利用数学模型、统计分析和计算机编程技术，通过对市场数据的系统化研究和分析，以及制定严格的交易规则和算法，来执行交易决策的一种交易方式
                   </p>
                   <Link legacyBehavior href="/about">
                     <a className="read-more mt-10">
@@ -121,8 +118,8 @@ const Index = () => {
                   </div>
                   <div className="content">
                     <h5>优质策略</h5>
-                    <p>
-                      好的策略是决定量化成功的关键
+                    <p className="my-2">
+                      好的交易策略是决定量化成功的关键，是交易的前提
                     </p>
                     <Link legacyBehavior href="/">
                       <a className="read-more style-two">
@@ -138,9 +135,8 @@ const Index = () => {
                   </div>
                   <div className="content">
                     <h5>高质量的程序代码</h5>
-                    <p>
-                      Quis autem veleum iure reprehe nderitecy quie voluptate
-                      velit esse quam nihile
+                    <p className="my-2">
+                      通过高效的编程，将交易策略转化为高质量的程序代码
                     </p>
                     <Link legacyBehavior href="/">
                       <a className="read-more style-two">
@@ -155,10 +151,26 @@ const Index = () => {
                     <span>03</span>
                   </div>
                   <div className="content">
+                    <h5>回测 & 优化</h5>
+                    <p className="my-2">
+                      再好的程序也需要经过大量的回测和实盘，验证程序的可行性，并不断优化
+                    </p>
+                    <Link legacyBehavior href="/">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div className="what-we-do-item wow fadeInUp delay-0-7s">
+                  <div className="number">
+                    <span>04</span>
+                  </div>
+                  <div className="content">
                     <h5>执行力</h5>
-                    <p>
-                      We denounce with righteous indignation and dislike
-                      beguiled demoralized charms
+                    <p className="my-2">
+                      经过市场检验的程序，坚定的执行，以长期的胜率为目标
                     </p>
                     <Link legacyBehavior href="/">
                       <a className="read-more style-two">

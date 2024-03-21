@@ -206,7 +206,7 @@ const DaskTopMenu = () => {
       </li>
       <li>
         <Link legacyBehavior href="about">
-          个人简介
+          关于我们
         </Link>
       </li>
       {/* <li className="dropdown">
@@ -434,7 +434,7 @@ const MobileMenu = () => {
       </li>
       <li>
         <Link legacyBehavior href="about">
-          个人简介
+          关于我们
         </Link>
       </li>
       {/* <li className="dropdown">

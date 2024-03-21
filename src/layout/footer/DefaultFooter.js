@@ -79,7 +79,7 @@ const DefaultFooter = () => {
                   </li>
                   <li>
                     <Link legacyBehavior href="about">
-                      个人简介
+                      关于我们
                     </Link>
                   </li>
                 </ul>
@@ -126,7 +126,7 @@ const DefaultFooter = () => {
                   </li>
                   <li>
                     <Link legacyBehavior href="/about">
-                      <a>关于我</a>
+                      <a>关于我们</a>
                     </Link>
                   </li>
                 </ul>
