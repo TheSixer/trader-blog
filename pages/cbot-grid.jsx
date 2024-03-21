@@ -110,7 +110,7 @@ const ProjectDetails = () => {
               <div className="content">
                 <h4>
                   <Link legacyBehavior href="cbot-volatile">
-                    Web Development
+                    双均线&布林带震荡策略
                   </Link>
                 </h4>
                 <Link legacyBehavior href="/cbot-volatile">
