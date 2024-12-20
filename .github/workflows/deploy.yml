@@ -32,6 +32,11 @@ jobs:
     - name: Archive production files
       run: tar -czf trader-blog.tar.gz .next package.json package-lock.json
 
+    # 使用 ssh-keyscan 添加目标服务器的主机密钥
+    - name: Add SSH Host Key
+      run: |
+        ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
     # 将文件部署到阿里云
     - name: Deploy to Alibaba Cloud
       env:
