@@ -1,0 +1,52 @@
+name: Deploy Next.js to Alibaba Cloud
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的变动
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 检出代码
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # 设置 Node.js 版本
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16' # 设置你项目所需的 Node.js 版本
+
+    # 安装依赖
+    - name: Install dependencies
+      run: npm install
+
+    # 构建 Next.js 项目
+    - name: Build Next.js project
+      run: npm run build
+
+    # 打包文件
+    - name: Archive production files
+      run: tar -czf trader-blog.tar.gz .next package.json package-lock.json
+
+    # 将文件部署到阿里云
+    - name: Deploy to Alibaba Cloud
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SERVER_HOST: ${{ secrets.SERVER_HOST }}
+        SERVER_USER: ${{ secrets.SERVER_USER }}
+        APP_DIR: ${{ secrets.APP_DIR }}
+      run: |
+        echo "$SSH_PRIVATE_KEY" > private_key
+        chmod 600 private_key
+        scp -i private_key trader-blog.tar.gz $SERVER_USER@$SERVER_HOST:$APP_DIR
+        ssh -i private_key $SERVER_USER@$SERVER_HOST << EOF
+        cd $APP_DIR
+        tar --overwrite -xzf trader-blog.tar.gz
+        npm install --production
+        pm2 delete "trader-blog" || true
+        pm2 start npm --name "trader-blog" -- start
+        EOF
