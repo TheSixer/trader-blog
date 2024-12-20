@@ -1,4 +1,4 @@
-name: Deploy Next.js to Alibaba Cloud
+name: Deploy Trader Blog to Alibaba Cloud
 
 on:
   push:
