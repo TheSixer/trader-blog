@@ -35,7 +35,16 @@ jobs:
     # 使用 ssh-keyscan 添加目标服务器的主机密钥
     - name: Add SSH Host Key
       run: |
+        # 创建 ~/.ssh 目录（如果不存在）
+        mkdir -p ~/.ssh
+        chmod 700 ~/.ssh
+
+        # 使用 ssh-keyscan 添加主机密钥
         ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+        # 检查 known_hosts 文件内容（用于调试）
+        echo "Contents of known_hosts:"
+        cat ~/.ssh/known_hosts
 
     # 将文件部署到阿里云
     - name: Deploy to Alibaba Cloud
