@@ -45,10 +45,6 @@ jobs:
         # 检查 known_hosts 文件内容（用于调试）
         echo "Contents of known_hosts:"
         cat ~/.ssh/known_hosts
-        echo "SERVER_HOST:"
-        echo "$SERVER_HOST"
-        echo "SERVER_USER:"
-        echo "$SERVER_USER"
 
     # 将文件部署到阿里云
     - name: Deploy to Alibaba Cloud
