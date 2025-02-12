@@ -55,6 +55,8 @@ jobs:
         APP_DIR: ${{ secrets.APP_DIR }}
       run: |
         echo "$SSH_PRIVATE_KEY" > private_key
+        echo "$SERVER_HOST" > server_host
+        echo "$SERVER_USER" > server_user
         chmod 600 private_key
         scp -i private_key trader-blog.tar.gz $SERVER_USER@$SERVER_HOST:$APP_DIR
         ssh -i private_key $SERVER_USER@$SERVER_HOST << EOF
