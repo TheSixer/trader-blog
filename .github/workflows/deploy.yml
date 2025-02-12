@@ -45,6 +45,10 @@ jobs:
         # 检查 known_hosts 文件内容（用于调试）
         echo "Contents of known_hosts:"
         cat ~/.ssh/known_hosts
+        echo "SERVER_HOST:"
+        echo "$SERVER_HOST"
+        echo "SERVER_USER:"
+        echo "$SERVER_USER"
 
     # 将文件部署到阿里云
     - name: Deploy to Alibaba Cloud
@@ -55,8 +59,6 @@ jobs:
         APP_DIR: ${{ secrets.APP_DIR }}
       run: |
         echo "$SSH_PRIVATE_KEY" > private_key
-        echo "$SERVER_HOST"
-        echo "$SERVER_USER"
         chmod 600 private_key
         scp -i private_key trader-blog.tar.gz $SERVER_USER@$SERVER_HOST:$APP_DIR
         ssh -i private_key $SERVER_USER@$SERVER_HOST << EOF
