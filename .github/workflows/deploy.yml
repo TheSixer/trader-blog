@@ -22,11 +22,11 @@ jobs:
 
     # 安装依赖
     - name: Install dependencies
-      run: pnpm install
+      run: yarn
 
     # 构建 Next.js 项目
     - name: Build Next.js project
-      run: pnpm run build
+      run: npm run build
 
     # 打包文件
     - name: Archive production files
@@ -60,7 +60,7 @@ jobs:
         ssh -i private_key $SERVER_USER@$SERVER_HOST << EOF
         cd $APP_DIR
         tar --overwrite -xzf trader-blog.tar.gz
-        pnpm install --production
+        yarn install --production
         pm2 delete "trader-blog" || true
-        pm2 start pnpm --name "trader-blog" -- start
+        pm2 start npm --name "trader-blog" -- start
         EOF
