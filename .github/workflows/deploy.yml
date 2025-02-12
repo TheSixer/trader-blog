@@ -60,8 +60,7 @@ jobs:
         ssh -i private_key $SERVER_USER@$SERVER_HOST << EOF
         cd $APP_DIR
         tar --overwrite -xzf trader-blog.tar.gz
-        sudo npm install -g yarn pm2
-        sudo yarn install --production
-        sudo pm2 delete "trader-blog" || true
-        sudo pm2 start npm --name "trader-blog" -- start
+        yarn install --production
+        pm2 delete "trader-blog" || true
+        pm2 start npm --name "trader-blog" -- start
         EOF
