@@ -1,4 +1,4 @@
-name: Deploy Trader Blog Website to Alibaba Cloud
+name: Deploy Trader Blog Website To Alibaba Cloud
 
 on:
   push:
