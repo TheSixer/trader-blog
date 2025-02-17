@@ -182,7 +182,7 @@ const DaskTopMenu = () => {
         </div>
       </li> */}
       <li className="dropdown">
-        <a href="cbots">量化策略</a>
+        <a href="cbots">策略广场</a>
         {/* <ul>
           <li>
             <Link legacyBehavior href="projects">
@@ -410,7 +410,7 @@ const MobileMenu = () => {
         </div>
       </li> */}
       <li className="dropdown">
-        <a href="cbots">量化策略</a>
+        <a href="cbots">策略广场</a>
         {/* <ul style={activeLi("Projects")}>
           <li>
             <Link legacyBehavior href="projects">

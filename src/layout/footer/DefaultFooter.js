@@ -74,7 +74,7 @@ const DefaultFooter = () => {
                   </li>
                   <li>
                     <Link legacyBehavior href="cbots">
-                      量化策略
+                      策略广场
                     </Link>
                   </li>
                   <li>

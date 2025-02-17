@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <Layout>
       {/* Page Banner Start */}
-      <PageBanner pageName={"量化策略"} />
+      <PageBanner pageName={"策略广场"} />
       {/* Page Banner End */}
       {/* Project Grid Area start */}
       <section className="project-grid-area pt-130 rpt-100 pb-10 rpb-25">
@@ -249,7 +249,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <span className="big-text light-opacity">量化策略</span>
+        <span className="big-text light-opacity">策略广场</span>
       </section>
       {/* Work With Area end */}
       {/* footer area start */}

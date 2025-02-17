@@ -4,7 +4,8 @@ import Layout from "@/src/layout/Layout";
 import Link from "next/link";
 import axios from "axios";
 import { useRouter } from "next/router";
-const { API_BASE_URL } = require('@/config');
+import Tag from "@/src/components/Tag";
+const { API_BASE_URL } = require("@/config");
 
 // 服务端获取文章列表数据
 export async function getServerSideProps({ query }) {
@@ -99,7 +100,11 @@ const Projects = ({ articles, pagination }) => {
     }
 
     // 添加当前页附近的页码
-    for (let i = Math.max(2, currentPage - delta); i <= Math.min(totalPages - 1, currentPage + delta); i++) {
+    for (
+      let i = Math.max(2, currentPage - delta);
+      i <= Math.min(totalPages - 1, currentPage + delta);
+      i++
+    ) {
       items.push(
         <Pagination.Item
           key={i}
@@ -157,7 +162,7 @@ const Projects = ({ articles, pagination }) => {
   return (
     <Layout>
       {/* Page Banner Start */}
-      <PageBanner pageName={"量化策略"} />
+      <PageBanner pageName={"策略广场"} />
       {/* Page Banner End */}
 
       {/* Project Grid Area start */}
@@ -183,15 +188,17 @@ const Projects = ({ articles, pagination }) => {
                   </div>
                   <div className="content wow fadeInUp delay-0-2s">
                     <Link legacyBehavior href={`/cbot/${article.id}`}>
-                      <a className="category">
-                        {article.category_name}
-                      </a>
+                      <a className="category">{article.category_name}</a>
                     </Link>
+
+                    <div className="my-2">
+                      {article.tags?.map((tag, index) => (
+                        <Tag key={index} text={tag} colorIndex={index} />
+                      ))}
+                    </div>
                     <h2>
                       <Link legacyBehavior href={`/cbot/${article.id}`}>
-                        <a>
-                          {article.title} <i>{article.tags?.join(" & ")}</i>
-                        </a>
+                        <a>{article.title}</a>
                       </Link>
                     </h2>
                   </div>
@@ -221,7 +228,7 @@ const Projects = ({ articles, pagination }) => {
             </div>
           </div>
         </div>
-        <span className="big-text light-opacity">量化策略</span>
+        <span className="big-text light-opacity">策略广场</span>
       </section>
       {/* Work With Area end */}
     </Layout>

@@ -8827,7 +8827,6 @@ blockquote .blockquote-footer:before {
 }
 .project-item .content .category {
   font-size: 14px;
-  margin-bottom: 14px;
   display: inline-block;
   text-decoration: underline;
 }

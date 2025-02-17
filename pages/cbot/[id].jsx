@@ -1,9 +1,8 @@
-import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
 import Link from "next/link";
 import Markdown from '@/src/components/Markdown';
 import axios from 'axios';
-import Image from 'next/image';
+import Tag from "@/src/components/Tag";
 const { API_BASE_URL, STATIC_URL } = require('@/config');
 
 // 服务端获取文章详情
@@ -63,9 +62,12 @@ const ProjectDetails = ({ article, prevArticle, nextArticle }) => {
               </h1>
               <div className="banner-text wow fadeInUp delay-0-3s">
                 {/* 使用文章内容的前200个字符作为简介 */}
-                <p>{article.content.substring(0, 200)}...</p>
                 <p>发布时间: {new Date(article.created_at).toLocaleDateString('zh-CN')}</p>
-                <p>标签: {article.tags?.join(', ')}</p>
+                <div className="mt-3">
+                  {article.tags?.map((tag, index) => (
+                    <Tag key={index} text={tag} colorIndex={index} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
