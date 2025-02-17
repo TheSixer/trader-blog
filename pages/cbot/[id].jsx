@@ -82,7 +82,7 @@ const ProjectDetails = ({ article, prevArticle, nextArticle }) => {
       {/* Project Details Content Area End */}
 
       {/* Next Prev Post Area start */}
-      {(prevArticle || nextArticle) && (
+      {/* {(prevArticle || nextArticle) && (
         <section className="next-prev-post-area">
           <div className="container container-1290">
             <div className="next-prev-post pt-110 rpt-80 pb-100 rpb-70">
@@ -129,7 +129,7 @@ const ProjectDetails = ({ article, prevArticle, nextArticle }) => {
             </div>
           </div>
         </section>
-      )}
+      )} */}
       {/* Next Prev Post Area end */}
     </Layout>
   );
