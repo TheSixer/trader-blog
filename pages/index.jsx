@@ -1,6 +1,6 @@
-import dynamic from 'next/dynamic';
- 
-const Counter = dynamic(() => import('@/src/components/Counter'), {
+import dynamic from "next/dynamic";
+
+const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
 });
 import Layout from "@/src/layout/Layout";
@@ -18,7 +18,7 @@ const Index = () => {
             <div className="col-lg-8">
               <div className="hero-content wow fadeInLeft delay-0-2s">
                 <h1>
-                  Quant <span>Trader</span> <i>Home</i>
+                  Quant <span className="block">Trader</span> <i>Home</i>
                 </h1>
               </div>
             </div>
@@ -348,7 +348,11 @@ const Index = () => {
             <div className="col-xl-6 col-lg-8">
               <div className="section-title mb-30 wow fadeInLeft delay-0-2s">
                 <span className="sub-title mb-15">回测结果</span>
-                <h2>分享一下我的策略历史<br />回测数据</h2>
+                <h2>
+                  分享一下我的策略历史
+                  <br />
+                  回测数据
+                </h2>
               </div>
             </div>
             <div className="col-lg-4 text-lg-end">

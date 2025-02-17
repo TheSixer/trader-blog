@@ -33,7 +33,7 @@ const DefaultHeader = ({ singleMenu }) => {
             <div className="menu-btns">
               {/* menu sidbar */}
               <div className="menu-sidebar">
-                <button>
+                <button className="flex items-center justify-center">
                   <img src="assets/images/icons/toggler.svg" alt="Toggler" />
                 </button>
               </div>
