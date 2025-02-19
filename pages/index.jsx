@@ -90,6 +90,28 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* About Us Area start */}
+      <section className="about-area pt-130 rpt-100 rel z-1">
+        <div className="container-fluid">
+          <div className="hero-bottom-image">
+            <img src="assets/images/banner/banner.jpeg" alt="Hero" />
+            <div className="hero-social">
+              {/* <a href="#">
+                <i className="fab fa-facebook-f" /> <span>Facebook</span>
+              </a>
+              <a href="#">
+                <i className="fab fa-twitter" /> <span>Twitter</span>
+              </a>
+              <a href="#">
+                <i className="fab fa-dribbble" /> <span>Dribbble</span>
+              </a> */}
+              <a href="#">
+                <i className="fab fa-telegram" /> <span>Telegram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* About Us Area end */}
       {/* Headline area start */}
       <div className="headline-area pt-90 rpt-85 rel z-1">
