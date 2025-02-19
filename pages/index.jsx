@@ -118,7 +118,7 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              风火轮 100X AI（FireWheel 100X AI） <span> And </span>{" "}
+              风火轮 100X AI（FireWheel 100X AI） <span> And </span>
               混天绫1%（Hun Tian Ling 1%）
             </span>
           </div>
@@ -220,7 +220,9 @@ const Index = () => {
               <div className="what-we-do-content mb-55">
                 <div className="section-title mb-60 wow fadeInUp delay-0-2s">
                   <h2>混天绫1%（Hun Tian Ling 1%）</h2>
-                  <p className="sub-title">🌊 以柔克刚，稳定增长，每天1%的复利奇迹！</p>
+                  <p className="sub-title">
+                    🌊 以柔克刚，稳定增长，每天1%的复利奇迹！
+                  </p>
                 </div>
                 <div className="what-we-do-item wow fadeInUp delay-0-3s">
                   <div className="number">
