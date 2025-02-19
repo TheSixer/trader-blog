@@ -4884,6 +4884,12 @@ h6,
 /*******************************************************/
 /******************** ## Hero Area ********************/
 /*******************************************************/
+.home-banner {
+  background-image: url(/assets/images/background/bg.png);
+  background-size: 40%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
 .hero-area:after {
   z-index: -1;
   width: 900px;
@@ -4915,7 +4921,12 @@ h6,
   font-weight: 700;
   position: relative;
   margin-bottom: -85px;
-  text-transform: uppercase;
+}
+
+.hero-content h1 i {
+  color: transparent;
+  background-image: linear-gradient(to bottom, var(--ygency-primary-color), #ffeb3b);
+  -webkit-background-clip: text;
 }
 @media only screen and (max-width: 1399px) {
   .hero-content h1 {
@@ -4946,7 +4957,7 @@ h6,
 }
 .hero-content h1 span {
   color: transparent;
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: white;
 }
 
@@ -5574,10 +5585,9 @@ h6,
 /*******************************************************/
 .headline-text {
   line-height: 1;
-  font-size: 250px;
+  font-size: 120px;
   font-weight: 700;
   color: var(--ygency-headline-color);
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5622,8 +5632,8 @@ h6,
 }
 .headline-text > span {
   padding-left: 100%;
-  -webkit-animation: marquee 15s linear infinite;
-  animation: marquee 15s linear infinite;
+  -webkit-animation: marquee 25s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 .headline-text > span span {
   opacity: 0.2;
@@ -9586,7 +9596,7 @@ blockquote .blockquote-footer:before {
 /*******************************************************/
 /* What We Do */
 .what-we-do-item {
-  padding-bottom: 35px;
+  padding-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media only screen and (min-width: 376px) {
@@ -9597,7 +9607,7 @@ blockquote .blockquote-footer:before {
   }
 }
 .what-we-do-item:not(:last-child) {
-  margin-bottom: 45px;
+  margin-bottom: 24px;
 }
 .what-we-do-item .number {
   -webkit-box-flex: 0;

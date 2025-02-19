@@ -12,19 +12,19 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section Start */}
-      <section className="hero-area pt-185 rpt-150 rel z-1">
+      <section className="home-banner hero-area pt-185 rpt-150 rel z-1">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
               <div className="hero-content wow fadeInLeft delay-0-2s">
                 <h1>
-                  Quant <span className="block">Trader</span> <i>Home</i>
+                  <i>NeZha</i> <span className="block">QUANT</span>
                 </h1>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="hero-right-image mt-20 wow fadeInUp delay-0-4s">
-                <img src="assets/images/hero/hero-right.png" alt="Hero" />
+                {/* <img src="assets/images/hero/hero-right.png" alt="Hero" /> */}
               </div>
             </div>
           </div>
@@ -96,7 +96,8 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              Quant <span> And </span> Trading
+              风火轮 100X AI（FireWheel 100X AI） <span> And </span>{" "}
+              混天绫1%（Hun Tian Ling 1%）
             </span>
           </div>
         </div>
@@ -109,17 +110,18 @@ const Index = () => {
             <div className="col-xl-5 col-lg-8">
               <div className="what-we-do-content mb-55">
                 <div className="section-title mb-60 wow fadeInUp delay-0-2s">
-                  <span className="sub-title mb-15">我的目标</span>
-                  <h2>一切皆可量化 &amp; 通往财富自由之路</h2>
+                  <h2>风火轮 100X AI（FireWheel 100X AI）</h2>
+                  <p className="sub-title">🔥 终极单边捕捉量化系统</p>
                 </div>
                 <div className="what-we-do-item wow fadeInUp delay-0-3s">
                   <div className="number">
                     <span>01</span>
                   </div>
                   <div className="content">
-                    <h5>优质策略</h5>
+                    <h5>策略目标</h5>
                     <p className="my-2">
-                      好的交易策略是决定量化成功的关键，是交易的前提
+                      精准识别单边行情，利用极端杠杆和浮盈加仓，实现 100 美金 →
+                      10,000 美金的指数级收益增长
                     </p>
                     <Link legacyBehavior href="/">
                       <a className="read-more style-two">
@@ -151,26 +153,11 @@ const Index = () => {
                     <span>03</span>
                   </div>
                   <div className="content">
-                    <h5>回测 & 优化</h5>
+                    <h5>核心优势</h5>
                     <p className="my-2">
-                      再好的程序也需要经过大量的回测和实盘，验证程序的可行性，并不断优化
-                    </p>
-                    <Link legacyBehavior href="/">
-                      <a className="read-more style-two">
-                        <span>Read More</span>{" "}
-                        <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-                <div className="what-we-do-item wow fadeInUp delay-0-7s">
-                  <div className="number">
-                    <span>04</span>
-                  </div>
-                  <div className="content">
-                    <h5>执行力</h5>
-                    <p className="my-2">
-                      经过市场检验的程序，坚定的执行，以长期的胜率为目标
+                      采用深度强化学习（Deep Reinforcement Learning,
+                      DRL）与市场动量智能追踪（Momentum
+                      Intelligence），自动筛选最具爆发潜力的交易品种
                     </p>
                     <Link legacyBehavior href="/">
                       <a className="read-more style-two">
@@ -185,9 +172,102 @@ const Index = () => {
             <div className="col-xl-6">
               <div className="what-we-do-image mb-55 wow fadeInRight delay-0-2s">
                 <img
-                  src="assets/images/about/about-banner.png"
+                  src="assets/images/about/fire-wheels.jpeg"
                   alt="What We Do"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* What We Do end */}
+
+      {/* What We Do start */}
+      <section className="what-we-do-area pt-90 rpt-80 rel z-1">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-xl-6">
+              <div className="what-we-do-image mb-55 wow fadeInRight delay-0-2s">
+                <img
+                  src="assets/images/about/huntianling.jpeg"
+                  alt="What We Do"
+                />
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-8">
+              <div className="what-we-do-content mb-55">
+                <div className="section-title mb-60 wow fadeInUp delay-0-2s">
+                  <h2>混天绫1%（Hun Tian Ling 1%）</h2>
+                  <p className="sub-title">🌊 以柔克刚，稳定增长，每天1%的复利奇迹！</p>
+                </div>
+                <div className="what-we-do-item wow fadeInUp delay-0-3s">
+                  <div className="number">
+                    <span>01</span>
+                  </div>
+                  <div className="content">
+                    <h5>多品种对冲交易</h5>
+                    <p className="my-2">
+                      组合外汇、大宗商品、指数等资产，分散市场风险
+                    </p>
+                    <Link legacyBehavior href="/">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div className="what-we-do-item wow fadeInUp delay-0-5s">
+                  <div className="number">
+                    <span>02</span>
+                  </div>
+                  <div className="content">
+                    <h5>多策略并行运行</h5>
+                    <p className="my-2">
+                      结合 趋势跟随、均值回归、套利交易，适应不同市场环境。
+                    </p>
+                    <Link legacyBehavior href="/">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div className="what-we-do-item wow fadeInUp delay-0-7s">
+                  <div className="number">
+                    <span>03</span>
+                  </div>
+                  <div className="content">
+                    <h5>大资金稳健运作</h5>
+                    <p className="my-2">
+                      通过 低杠杆+分批进场 控制回撤，确保稳定收益
+                    </p>
+                    <Link legacyBehavior href="/">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+                <div className="what-we-do-item wow fadeInUp delay-0-7s">
+                  <div className="number">
+                    <span>04</span>
+                  </div>
+                  <div className="content">
+                    <h5>智能动态风控</h5>
+                    <p className="my-2">
+                      采用 AI 风控系统，自动调整仓位和对冲比例，确保资金安全
+                    </p>
+                    <Link legacyBehavior href="/">
+                      <a className="read-more style-two">
+                        <span>Read More</span>{" "}
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
